@@ -13,8 +13,7 @@ Box.prototype.volume = function () {
     return ("Объём коробки равен " + (this.height * this.width * this.depth) + "<br/>");
 };
 Box.prototype.equals = function (otherObj) {
-    if (this.material === otherObj.material) {var answer = "да"}
-    else {var answer = "нет"}
+    let answer = (this.material === otherObj.material) ? "да" : "нет";
     return "Коробки из одного материала? Ответ: " + answer + "<br/>";
 };
 
